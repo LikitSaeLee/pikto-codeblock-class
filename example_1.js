@@ -16,14 +16,22 @@ multiply( 2, 4 );
 // Since function is an object in javascript, you can pass them
 // to another function as a callback.
 function compute( math_func ) {
-  var first_digit = 3;
-  var second_digit = 5;
-  math_func( first_digit, second_digit );
+  math_func( 3, 5 );
 }
 
 // return 8
 compute( sum );
 
+// same as previous example, you create a function and pass the
+// function as an argument immediately.
+compute( function( a,b ) {
+  return a + b;
+});
+
 // return 15
 compute( multiply );
 
+// return 15 also
+compute( function( a,b ) {
+  return a * b;
+})
