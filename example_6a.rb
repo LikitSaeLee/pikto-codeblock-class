@@ -31,6 +31,7 @@ class Triangle
     1/2 * self.length * self.height * self.height
   end
 
+  # reader method
   def length
     @length
   end

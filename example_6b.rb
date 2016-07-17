@@ -10,6 +10,8 @@ end
 
 class Triangle
 
+  attr_reader :length, :height, :width
+
   def initialize( length, height, width )
     # instance variable
     @length = length
@@ -26,18 +28,6 @@ class Triangle
 
   def volume
     1/2 * self.length * self.height * self.height
-  end
-
-  def length
-    @length
-  end
-
-  def height
-    @height
-  end
-
-  def width
-    @width
   end
 end
 
