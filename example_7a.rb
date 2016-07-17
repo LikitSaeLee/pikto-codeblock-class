@@ -1,3 +1,5 @@
+# Topic: Inheritant
+
 class Shape
   def initialize( length, height, width )
     @length = length
