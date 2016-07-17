@@ -5,6 +5,7 @@ class Shape
     @width = width
   end
 
+  protected
   def length
     @length
   end

@@ -13,7 +13,7 @@ sum( 2, 4 );
 // return 8
 multiply( 2, 4 );
 
-// Since function is an object in javascript, you can pass them
+// Since functions are object in javascript, you can pass them
 // to another function as a callback.
 function compute( math_func ) {
   math_func( 3, 5 );
@@ -22,8 +22,8 @@ function compute( math_func ) {
 // return 8
 compute( sum );
 
-// same as previous example, you create a function and pass the
-// function as an argument immediately.
+// same as previous example, you create a function on the fly
+// and pass it as an argument directly.
 compute( function( a,b ) {
   return a + b;
 });
