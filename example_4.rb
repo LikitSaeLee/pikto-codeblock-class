@@ -6,15 +6,15 @@ def echo( &func )
   return 'Lambda return at this line'
 end
 
-lambda = lambda { |a,b| a + b }
-proc = proc.new { |a,b| a + b }
+lambda_obj = lambda { |a,b| a + b }
+proc_obj = proc.new { |a,b| a + b }
 
 # return 'Lambda return at this line'
 # this is because after lambda function is called, the echo function
 # continue to execute and return the message
-echo( lambda )
+echo( lambda_obj )
 
 # return 6, without printing the message
 # because the return keyword for proc function
 # with interrupt its caller function.
-echo( proc )
+echo( proc_obj )

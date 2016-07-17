@@ -22,12 +22,20 @@ class Shape
 end
 
 class Triangle < Shape
+  def initialize( length, height, width )
+    super( length, height, width )
+  end
+
   def volume
     1/2 * self.length * self.height * self.width
   end
 end
 
 class Rectangle < Shape
+  def initialize( length, height, width )
+    super( length, height, width )
+  end
+
   def volume
     self.length * self.height * self.width
   end
