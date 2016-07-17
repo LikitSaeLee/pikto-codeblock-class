@@ -1,7 +1,9 @@
+# Topic: Object oriented thinking
+# Given this problem:
 # Calculate the sum of the volume of two triangles
 # with length, height, width of [ 2,3,4 ] and [ 3,4,5 ]
 #
-# produral
+# solving it in produral way
 
 sum_of_volume( [ 2, 3, 4 ], [ 3, 4, 5 ] )
 
@@ -13,7 +15,7 @@ def calculate_volume( length, height, width )
   1/2 * length * height * width
 end
 
-# object oriented
+# solving it in object oriented way
 
 Triangle.new( 2, 3, 4 ).volume + Triangle.new( 3, 4, 5 ).volume
 
