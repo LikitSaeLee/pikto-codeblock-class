@@ -1,20 +1,10 @@
 class Shape
+  attr_reader :length, :height, :width
+
   def initialize( length, height, width )
     @length = length
     @height = height
     @width = width
-  end
-
-  def length
-    @length
-  end
-
-  def height
-    @height
-  end
-
-  def width
-    @width
   end
 end
 
