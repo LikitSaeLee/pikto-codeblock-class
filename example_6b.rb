@@ -9,7 +9,7 @@ def main
 end
 
 class Triangle
-
+  @@total_volume = 0
   attr_reader :length, :height, :width
 
   def initialize( length, height, width )
