@@ -1,3 +1,5 @@
+# Topic: Basic Syntax of class
+# Lets say we want to keep track of the volume of all initialized triangle.
 def main
   a = Triangle.new( 2, 3, 4 )
   b = Triangle.new( 4, 5, 6 )
@@ -9,9 +11,12 @@ end
 class Triangle
 
   def initialize( length, height, width )
+    # instance variable
     @length = length
     @height = height
     @width = width
+    # For every triangle initialized, we add its volume
+    # to store in its class variables
     @@total_volume += self.volume
   end
 
