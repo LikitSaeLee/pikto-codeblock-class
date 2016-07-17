@@ -1,8 +1,13 @@
-# in ruby, codeblock are anonymous function
+# in ruby, you can think lambda as an anonymous function
 # given the previous example in javascript
 
 sum = lambda { |a, b| a + b }
 multiply = lambda { |a, b| a * b }
+
+# or
+sum = lambda do |a,b|
+  a + b
+end
 
 # return 6
 sum.call( 2, 4 )
@@ -11,7 +16,7 @@ sum.call( 2, 4 )
 multiply.call( 2, 4 )
 
 # in ruby, you add a & infront of your argument
-# to indicate this argument is a function
+# to indicate that argument is a function
 def compute( &math_func )
   math_func.call( 3, 5 )
 end
